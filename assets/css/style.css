@@ -1,0 +1,3035 @@
+/* all elements */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* FONTS STARTS */
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/Overpass-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-Black.woff2') format('woff2'),
+    url('../fonts/Overpass-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Overpass-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Overpass-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-Bold.woff2') format('woff2'),
+    url('../fonts/Overpass-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Overpass-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/Overpass-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-LightItalic.woff2') format('woff2'),
+    url('../fonts/Overpass-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-Light.woff2') format('woff2'),
+    url('../fonts/Overpass-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-Italic.woff2') format('woff2'),
+    url('../fonts/Overpass-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Overpass-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Overpass-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-Medium.woff2') format('woff2'),
+    url('../fonts/Overpass-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-Regular.woff2') format('woff2'),
+    url('../fonts/Overpass-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-SemiBold.woff2') format('woff2'),
+    url('../fonts/Overpass-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/Overpass-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-Thin.woff2') format('woff2'),
+    url('../fonts/Overpass-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Overpass-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+    url('../fonts/OpenSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* all section padding form left and right */
+.main-padding {
+  padding-left: 156px;
+  padding-right: 156px;
+}
+
+/* header css */
+header {
+  background: #222426;
+  padding: 42px 86px 2px 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: 234px;
+  display: none;
+}
+
+.header-middle-logo {
+  width: 100%;
+  max-width: 367px;
+}
+
+.header-middle-logo a {
+  display: inline-block;
+}
+
+.header-logo a {
+  display: inline-block;
+}
+
+ul#menu {
+  width: 100%;
+  max-width: 1407px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar-nav li a {
+  font-family: 'Overpass';
+  font-weight: 500;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+header .navbar-nav li a:hover {
+  color: #9A351A;
+}
+
+.login {
+  width: 100%;
+  max-width: 377px;
+  display: flex;
+  align-items: center;
+  margin-left: 38px;
+  position: relative;
+  z-index: 3;
+}
+
+.login ::before {
+  content: " ";
+  position: absolute;
+  width: 64px;
+  height: 65px;
+  border-radius: 50%;
+  background: #9A351A;
+  top: -7px;
+  left: -5px;
+  z-index: -1;
+}
+
+.login img {
+  width: 73px;
+  height: 73px;
+  margin-right: 10px;
+}
+
+/* header css end*/
+
+/* banner css */
+.banner {
+  background-image: url(../img/bannerr.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 306px 0px 451px;
+  position: relative;
+  z-index: -1;
+}
+
+.banner::after {
+  content: url(../img/banner-postion.png);
+  position: absolute;
+  height: 90%;
+  top: 20px;
+  right: 0;
+  z-index: 1;
+}
+
+.banner-content {
+  width: 100%;
+  max-width: 1229px;
+  margin: 0 auto;
+  color: #fafafa;
+  vertical-align: baseline;
+}
+
+.banner-content h2 {
+  font-family: 'Overpass';
+  font-weight: bold;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 85px;
+  line-height: 101px;
+}
+
+/* partner css */
+.partner {
+  background: #b72700d6;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  margin-top: -165px;
+  position: relative;
+}
+
+.partner-lap-image {
+  position: absolute;
+  width: 100%;
+  max-width: 418px;
+  bottom: -56px;
+  left: 28%;
+}
+
+.partner-image {
+  width: 100%;
+  max-width: 580px;
+}
+
+.partner-image img {
+  margin-top: -174px;
+}
+
+.partner-contents {
+  width: 100%;
+  max-width: 638px;
+}
+
+.partner-contents p {
+  font-family: 'Overpass';
+  font-weight: 600;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 27px;
+  line-height: 36px;
+  margin-bottom: 39px;
+}
+
+.partner-contents ul li {
+  font-family: 'Overpass';
+  font-weight: 600;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 27px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  margin-bottom: 48px;
+  position: relative;
+  margin-left: 21px;
+}
+
+.partner-contents ul li:nth-child(2) {
+  margin-bottom: unset;
+}
+
+
+.partner-contents ul li::before {
+  position: absolute;
+  max-width: 11px;
+  content: url('../img/Triangle\ 1.png');
+  left: -22px;
+  top: -5px;
+}
+
+
+/* portfolio css */
+.portfolio {
+  background: #F5F5F5;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.portfolio-head h2 {
+  font-family: 'Overpass';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 74px;
+  color: #323232;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.portfolio-blocks {
+  width: 100%;
+  max-width: 1604px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.portfolio-blocks-image {
+  width: 100%;
+  max-width: 156px;
+}
+
+.portfolio-blocks-image img {
+  width: 111px;
+  height: 41px;
+  object-fit: contain;
+}
+
+/* experience css */
+.experience {
+  background: #323232;
+  padding-top: 96px;
+  padding-bottom: 103px;
+}
+
+.experience .news-head h2 {
+  color: #bfbfc0;
+}
+
+.experience-card {
+  width: 100%;
+  max-width: 670px;
+  background: #232323;
+  padding: 79px 13px 40px 57px;
+}
+
+.experience-card {
+  position: relative;
+}
+
+.experience-card-image {
+  width: 100%;
+  max-width: 335px;
+  position: absolute;
+  top: -121px;
+  left: 0;
+}
+
+.experience-card-contents {
+  width: 100%;
+  max-width: 299px;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.experience-card-contents h2 {
+  font-family: 'Overpass';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 53px;
+  line-height: 61px;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+.experience-card-contents p {
+  font-family: 'Overpass';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 33px;
+  line-height: 41px;
+  text-transform: capitalize;
+  color: #fafafa;
+}
+
+.experience-card-experience {
+  padding: 34px 0px;
+  border-bottom: 1px solid #bfbfc0;
+}
+
+.experience-card-experience h2 {
+  font-family: 'Overpass';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 45px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #bfbfc0;
+  margin-bottom: 20px;
+}
+
+.experience-card-experience p {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #bfbfc0;
+}
+
+.experience-card-education-unviversity {
+  width: 100%;
+  max-width: 306px;
+}
+
+.experience-card-education {
+  padding: 34px 0px;
+  border-bottom: 1px solid #bfbfc0;
+}
+
+
+.experience-card-education h2 {
+  font-family: 'Overpass';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 45px;
+  letter-spacing: 0.7;
+  text-transform: uppercase;
+  color: #bfbfc0;
+  margin-bottom: 18px;
+}
+
+.experience-card-education-unviversity {
+  display: flex;
+}
+
+.experience-card-education li {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #bfbfc0;
+}
+
+.experience-card-icon .fa {
+  margin-right: 10px;
+  font-size: 21px;
+  color: #bfbfc0;
+}
+
+.fact {
+  border-bottom: none;
+}
+
+.experience-grovelove-card {
+  width: 100%;
+  max-width: 892px;
+  background: #232323;
+  padding: 76px 12px 1px 50px;
+  position: relative;
+}
+
+.experience-grove-card-card-image {
+  width: 100%;
+  max-width: 335px;
+  position: absolute;
+  top: -121px;
+  right: 0;
+}
+
+.gove-card {
+  width: 100%;
+  max-width: 435px;
+  margin-left: unset;
+}
+
+.gove-card-contents {
+  width: 100%;
+  max-width: 784px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gove-left-cards {
+  padding-bottom: 25px;
+}
+
+.gove-left-card {
+  border-bottom: 1px solid #bfbfc0;
+  padding-bottom: 30px;
+}
+
+.gove-card-head {
+  width: 100%;
+  max-width: 450px;
+  border-bottom: none;
+}
+
+.block-inner {
+  display: block;
+  margin-top: 34px;
+}
+
+.gove-card-educaation {
+  width: 100%;
+  max-width: 297px;
+  border-bottom: none;
+}
+
+/* news css */
+.news {
+  background: #F5F5F5;
+  background-image: url(../img/new-bg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 143px 0px 99px;
+}
+
+.news-head h2 {
+  font-family: 'Overpass';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 74px;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+  color: #323232;
+  text-align: center;
+}
+
+.news-card {
+  width: 100%;
+  max-width: 364px;
+  margin: 0 auto;
+  transition: 0.4s ease-in-out;
+}
+
+.news-card {
+  background: #a0371b;
+}
+
+.news-card img {
+  transition: 0.4s ease-in-out;
+}
+
+.news-card img:hover {
+  opacity: 0.4;
+}
+
+.news-card-content {
+  background: #FFFFFF;
+  padding: 36px 43px 32px 39px;
+  transition: 0.4s ease-in-out;
+}
+
+.news-card-content h2 {
+  font-family: 'Overpass';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: #a0371b;
+  transition: 0.4s ease-in-out;
+}
+
+.news-card:hover .news-card-content {
+  background: #9A351A;
+}
+
+.news-card:hover .news-card-content h2 {
+  color: #F5F5F5;
+}
+
+.news-card:hover .news-card-content p {
+  color: #F5F5F5;
+}
+
+.nba h2 {
+  margin-bottom: -6px;
+}
+
+.news-card-content p {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #323232;
+  transition: 0.4s ease-in-out;
+}
+
+/* footer css */
+footer {
+  background: #a0371b;
+  padding: 107px 0px 99px;
+}
+
+.footer-head h2 {
+  font-family: 'Overpass';
+  font-weight: normal;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.Greer {
+  border-right: 1px solid #CA9384;
+}
+
+.greever-love {
+  padding-bottom: 85px;
+}
+
+.greever-love h2 {
+  font-family: 'Overpass';
+  font-weight: 600;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 53px;
+  line-height: 61px;
+  text-transform: uppercase;
+}
+
+.greever-love p {
+  font-family: 'Overpass';
+  font-weight: 300;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 34px;
+  line-height: 42px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.greever-love ul li a {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 19px;
+  letter-spacing: 0.1px;
+  transition: 0.4s ease-in-out;
+}
+
+
+.greever-love ul li a:hover {
+  color: #e09f89;
+}
+
+.greever-love ul li .fa {
+  color: #fafafa;
+  font-size: 21px;
+  margin-right: 28px;
+  margin-bottom: 21px;
+  transition: 0.4s ease-in-out;
+}
+
+.greever-love ul li .fa:hover {
+  color: #e09f89;
+}
+
+.bamba {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.footer-border {
+  border-bottom: 1px solid #CA9384;
+
+}
+
+.footer-logo {
+  padding-top: 37px;
+  width: 100%;
+  max-width: 341px;
+}
+
+.footer-menu {
+  padding-top: 37px;
+}
+
+.footer-menu ul {
+  width: 100%;
+  max-width: 458px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-menu ul li a {
+  font-family: 'Overpass';
+  font-weight: normal;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 17px;
+  line-height: 29px;
+  text-transform: capitalize;
+  transition: 0.4s ease-in-out;
+}
+
+.footer-menu ul li a:hover {
+  color: #e09f89;
+}
+
+.footer-copy-write {
+  padding-top: 48px;
+}
+
+.footer-copy-write p {
+  font-family: 'Overpass';
+  font-weight: normal;
+  font-style: normal;
+  color: #fafafa;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: end;
+}
+
+.footer-copy-write a {
+  color: #fafafa;
+  transition: 0.4s ease-in-out;
+}
+
+.footer-copy-write a:hover {
+  color: #e09f89;
+
+}
+
+
+/* all media  */
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (max-width: 1800px) {
+  .gove-card-educaation {
+    max-width: 301px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1680px and up) */
+@media only screen and (max-width: 1680px) {
+
+  header {
+    padding: 42px 12px 2px 20px;
+  }
+
+  .partner-lap-image {
+    bottom: -56px;
+    left: 24%;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 149px;
+  }
+
+  .experience-card-image {
+    max-width: 264px;
+    top: -88px;
+  }
+
+  .experience-card-contents h2 {
+    font-size: 46px;
+    line-height: 55px;
+  }
+
+  .experience-card-contents {
+    max-width: 270px;
+  }
+
+  .experience-card-contents p {
+    font-size: 20px;
+  }
+
+  .experience-grove-card-card-image {
+    max-width: 264px;
+    top: -88px;
+  }
+
+  .gove-card-head {
+    max-width: 387px;
+  }
+
+  .experience-card-experience p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .experience-grovelove-card {
+    max-width: 892px;
+    padding: 76px 12px 9px 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (max-width: 1600px) {
+  header {
+    padding: 42px 4px 2px 20px;
+  }
+
+  .header-middle-logo {
+    max-width: 351px;
+  }
+
+  .partner-lap-image {
+    bottom: -56px;
+    left: 23%;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 140px;
+  }
+
+  .experience-card-image {
+    max-width: 232px;
+    top: -59px;
+  }
+
+  .gove-card-head {
+    max-width: 352px;
+  }
+
+  .experience-card-experience p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .block-inner {
+    margin-top: 13px;
+  }
+
+  .gove-card-head {
+    max-width: 364px;
+  }
+
+  .gove-card-educaation {
+    max-width: 283px;
+  }
+
+  .experience-grovelove-card {
+    padding: 76px 12px 15px 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (max-width: 1500px) {
+  header {
+    padding: 34px 1px 2px 18px;
+  }
+
+  .banner-content h2 {
+    font-size: 80px;
+  }
+
+  .partner {
+    padding-top: 72px;
+    padding-bottom: 65px;
+    margin-top: -140px;
+  }
+
+  .partner-contents p {
+    margin-bottom: 34px;
+  }
+
+  .partner-contents ul li {
+    margin-bottom: 29px;
+  }
+
+  .portfolio {
+    padding-top: 76px;
+    padding-bottom: 43px;
+  }
+
+  .main-padding {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 137px;
+  }
+
+  .portfolio-blocks-image img {
+    width: 104px;
+    height: 39px;
+  }
+
+  .experience {
+    padding-top: 79px;
+    padding-bottom: 84px;
+  }
+
+  .experience-card-image {
+    max-width: 216px;
+    top: -44px;
+  }
+
+  .experience-grove-card-card-image {
+    max-width: 216px;
+    top: -44px;
+  }
+
+  .experience-card-experience p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .news {
+    padding: 76px 0px 74px;
+  }
+
+  footer {
+    padding: 76px 0px 53px;
+  }
+
+  .gove-card-educaation {
+    max-width: 272px;
+  }
+
+  .experience-grovelove-card {
+    padding: 76px 12px 0px 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (max-width: 1440px) {
+  header {
+    padding: 18px 0px 2px 16px;
+  }
+
+  ul#menu {
+    max-width: 1265px;
+  }
+
+  .header-middle-logo {
+    max-width: 272px;
+  }
+
+  .login img {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+  }
+
+  .banner {
+    padding: 269px 0px 412px;
+  }
+
+  .banner-content {
+    max-width: 1090px;
+  }
+
+  .banner-content h2 {
+    font-size: 72px;
+    line-height: 85px;
+  }
+
+  .partner-contents p {
+    font-size: 23px;
+    line-height: 34px;
+    margin-bottom: 29px;
+  }
+
+  .partner-contents ul li {
+    margin-bottom: 23px;
+  }
+
+  .partner-contents {
+    max-width: 566px;
+  }
+
+  .partner-contents ul li {
+    font-size: 23px;
+    line-height: 34px;
+    margin-left: 25px;
+  }
+
+  .partner-image {
+    max-width: 528px;
+  }
+
+  .partner-lap-image {
+    max-width: 391px;
+    bottom: -57px;
+    left: 23%;
+  }
+
+  .greever-love {
+    padding-bottom: 44px;
+  }
+
+  .portfolio {
+    padding-top: 57px;
+    padding-bottom: 23px;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 129px;
+  }
+
+  .portfolio-blocks-image img {
+    width: 99px;
+    height: 31px;
+  }
+
+  .news-head h2 {
+    font-size: 51px;
+    line-height: 62px;
+    margin-bottom: 74px;
+  }
+
+  .news {
+    padding: 54px 0px 65px;
+  }
+
+  .footer-head h2 {
+    font-size: 53px;
+    line-height: 59px;
+    margin-bottom: 63px;
+  }
+
+  footer {
+    padding: 63px 0px 29px;
+  }
+
+  .greever-love h2 {
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  .greever-love p {
+    font-size: 29px;
+    line-height: 38px;
+    margin-bottom: 27px;
+  }
+
+  .footer-logo {
+    padding-top: 37px;
+    width: 100%;
+    max-width: 311px;
+  }
+
+  .experience-grovelove-card {
+    padding: 76px 10px 1px 39px;
+  }
+
+  .gove-card-head {
+    max-width: 347px;
+  }
+
+  .gove-card-educaation {
+    max-width: 267px;
+  }
+
+  .experience-card-experience p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up) */
+@media only screen and (max-width: 1366px) {
+  .header-middle-logo {
+    max-width: 238px;
+  }
+
+  header .navbar-nav li a {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .login {
+    max-width: 330px;
+    margin-left: 4px;
+  }
+
+  .login img {
+    width: 55px;
+    height: 55px;
+    margin-right: 8px;
+  }
+
+  .login ::before {
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: -4px;
+  }
+
+  ul#menu {
+    max-width: 1162px;
+  }
+
+  .banner-content {
+    max-width: 1006px;
+  }
+
+  .banner-content h2 {
+    font-size: 65px;
+    line-height: 77px;
+  }
+
+  .banner {
+    padding: 252px 0px 385px;
+  }
+
+  .main-padding {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
+  .partner-image img {
+    margin-top: -143px;
+  }
+
+  .partner-image {
+    max-width: 492px;
+  }
+
+  .partner {
+    padding-top: 54px;
+    padding-bottom: 46px;
+    margin-top: -127px;
+  }
+
+  .partner-lap-image {
+    max-width: 362px;
+    bottom: -54px;
+    left: 22%;
+  }
+
+  .portfolio {
+    padding-top: 46px;
+    padding-bottom: 8px;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 107px;
+  }
+
+  .news-head h2 {
+    font-size: 44px;
+    line-height: 52px;
+    margin-bottom: 38px;
+  }
+
+  .news {
+    padding: 40px 0px 40px;
+  }
+
+  .news-card-content h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .nba h2 {
+    margin-bottom: -6px;
+  }
+
+  footer {
+    padding: 49px 0px 15px;
+  }
+
+  .footer-head h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 46px;
+  }
+
+  .greever-love h2 {
+    font-size: 38px;
+    line-height: 49px;
+  }
+
+  .greever-love p {
+    font-size: 25px;
+    line-height: 36px;
+    margin-bottom: 23px;
+  }
+
+  .greever-love ul li .fa {
+    font-size: 21px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+
+  }
+
+  .footer-logo {
+    padding-top: 37px;
+    max-width: 255px;
+  }
+
+  .footer-menu {
+    padding-top: 46px;
+  }
+
+  .footer-copy-write {
+    padding-top: 46px;
+  }
+
+  .gove-card-head {
+    max-width: 346px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (max-width: 1280px) {
+  header {
+    padding: 16px 0px 1px 15px;
+  }
+
+  ul#menu {
+    max-width: 1097px;
+  }
+
+  .header-middle-logo {
+    max-width: 205px;
+  }
+
+  .banner-content {
+    max-width: 866px;
+  }
+
+  .banner-content h2 {
+    font-size: 56px;
+    line-height: 68px;
+  }
+
+  .login img {
+    width: 51px;
+    height: 51px;
+    margin-right: 7px;
+  }
+
+  .banner {
+    padding: 222px 0px 334px;
+  }
+
+  .main-padding {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .partner {
+    padding-top: 35px;
+    padding-bottom: 38px;
+    margin-top: -107px;
+  }
+
+  .partner-lap-image {
+    max-width: 317px;
+    bottom: -47px;
+    left: 24%;
+  }
+
+  .news-head h2 {
+    font-size: 39px;
+    line-height: 47px;
+    margin-bottom: 34px;
+  }
+
+  .footer-head h2 {
+    font-size: 37px;
+    line-height: 43px;
+    margin-bottom: 45px;
+  }
+
+  .greever-love h2 {
+    font-size: 31px;
+    line-height: 42px;
+  }
+
+  .greever-love p {
+    font-size: 23px;
+    line-height: 34px;
+    margin-bottom: 21px;
+  }
+
+  .greever-love {
+    padding-bottom: 22px;
+  }
+
+  .footer-logo {
+    padding-top: 37px;
+    max-width: 242px;
+  }
+
+  .footer-menu ul li a {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .footer-menu ul {
+    max-width: 433px;
+  }
+
+  .footer-copy-write p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .experience-card-experience p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .gove-card-head {
+    max-width: 344px;
+  }
+
+  .gove-card-educaation {
+    width: 100%;
+    max-width: 250px;
+    border-bottom: none;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .login {
+    max-width: 294px;
+    margin-left: 3px;
+  }
+
+  ul#menu {
+    max-width: 1065px;
+  }
+
+  header .navbar-nav li a {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .header-middle-logo {
+    max-width: 194px;
+  }
+
+  .banner-content {
+    max-width: 738px;
+  }
+
+  .banner-content h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .partner-image {
+    max-width: 490px;
+  }
+
+  .partner-image img {
+    margin-top: -126px;
+  }
+
+  .partner-contents {
+    max-width: 497px;
+  }
+
+  .partner-contents p {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 27px;
+  }
+
+  .partner-contents ul li {
+    font-size: 21px;
+    line-height: 32px;
+    margin-left: 26px;
+  }
+
+  .main-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .partner-lap-image {
+    max-width: 293px;
+    bottom: -53px;
+    left: 25%;
+  }
+
+  .portfolio-head h2 {
+    font-size: 30px;
+    line-height: 71px;
+  }
+
+  .news-head h2 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 31px;
+  }
+
+  .footer-head h2 {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 43px;
+  }
+
+  .greever-love h2 {
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  .greever-love p {
+    font-size: 21px;
+    line-height: 33px;
+    margin-bottom: 21px;
+  }
+
+  .greever-love ul li a {
+    font-size: 18px;
+  }
+
+  .greever-love ul li .fa {
+    font-size: 20px;
+    margin-right: 19px;
+    margin-bottom: 19px;
+  }
+
+  .footer-logo {
+    padding-top: 30px;
+    max-width: 215px;
+  }
+
+  .footer-menu {
+    padding-top: 34px;
+  }
+
+  .footer-copy-write {
+    padding-top: 34px;
+  }
+
+  .gove-card-educaation {
+    width: 100%;
+    max-width: 235px;
+    border-bottom: none;
+  }
+
+  .experience-card-experience p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .gove-card-head {
+    max-width: 322px;
+  }
+
+  .experience-grovelove-card {
+    padding: 76px 10px 6px 39px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1199px and up) */
+@media only screen and (max-width: 1199px) {
+  .news-card-content h2 {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+
+  .news-card-content p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .news-card-content {
+    padding: 29px 6px 28px 25px;
+  }
+
+  footer {
+    padding: 33px 0px 14px;
+  }
+
+  .bamba {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 0;
+    margin-left: auto;
+  }
+
+  .experience-card {
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+
+  .experience-card {
+    width: 100%;
+    max-width: 803px;
+    padding: 79px 13px 40px 57px;
+  }
+
+  .experience-card-experience p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .gove-card-head {
+    max-width: 417px;
+  }
+
+  .gove-card-educaation {
+    width: 100%;
+    max-width: 317px;
+    border-bottom: none;
+  }
+
+  .experience-grovelove-card {
+    padding: 76px 10px 6px 39px;
+    max-width: 807px;
+    margin: 0 auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1152px and up) */
+@media only screen and (max-width: 1152px) {
+  .header-middle-logo {
+    max-width: 181px;
+  }
+
+  .login img {
+    width: 47px;
+    height: 45px;
+    margin-right: 5px;
+  }
+
+  ul#menu {
+    max-width: 1019px;
+  }
+
+  .login {
+    max-width: 272px;
+    margin-left: 3px;
+  }
+
+  .banner {
+    padding: 198px 0px 278px;
+  }
+
+  .banner-content h2 {
+    font-size: 45px;
+    line-height: 56px;
+  }
+
+  .banner-content {
+    max-width: 692px;
+  }
+
+  .partner-image {
+    max-width: 479px;
+  }
+
+  .main-padding {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  .partner-contents p {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 26px;
+  }
+
+  .partner-contents ul li {
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 25px;
+  }
+
+  .partner {
+    padding-top: 33px;
+    padding-bottom: 36px;
+    margin-top: -74px;
+  }
+
+  .partner-lap-image {
+    max-width: 261px;
+    bottom: -54px;
+    left: 27%;
+  }
+
+  .portfolio-head h2 {
+    font-size: 27px;
+    line-height: 69px;
+  }
+
+  .news-head h2 {
+    font-size: 33px;
+    line-height: 46px;
+    margin-bottom: 26px;
+  }
+
+  .footer-head h2 {
+    font-size: 31px;
+    line-height: 38px;
+    margin-bottom: 39px;
+  }
+
+  .greever-love h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .greever-love p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 19px;
+  }
+
+  .bamba {
+    width: 100%;
+    max-width: 305px;
+    margin: 0 0;
+    margin-left: auto;
+  }
+
+  .greever-love ul li a {
+    font-size: 17px;
+  }
+
+  .greever-love ul li .fa {
+    font-size: 19px;
+    margin-right: 17px;
+    margin-bottom: 14px;
+  }
+
+  .footer-logo {
+    padding-top: 29px;
+    max-width: 195px;
+  }
+
+  .footer-menu ul li a {
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .footer-copy-write p {
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .footer-menu {
+    padding-top: 32px;
+  }
+
+  .footer-copy-write {
+    padding-top: 32px;
+  }
+
+  .footer-menu ul {
+    max-width: 350px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+  .login {
+    max-width: 261px;
+    margin-left: 0px;
+  }
+
+  .login img {
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+  }
+
+  .login ::before {
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    left: -2px;
+  }
+
+  .header-middle-logo {
+    max-width: 172px;
+  }
+
+  ul#menu {
+    max-width: 952px;
+  }
+
+  .banner-content h2 {
+    font-size: 41px;
+    line-height: 50px;
+  }
+
+  .banner-content {
+    max-width: 626px;
+  }
+
+  .banner {
+    padding: 191px 0px 256px;
+  }
+
+  .partner-image {
+    max-width: 429px;
+  }
+
+  .main-padding {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .partner-contents p {
+    font-size: 19px;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+
+  .partner-contents ul li {
+    font-size: 19px;
+    line-height: 27px;
+    margin-left: 26px;
+  }
+
+  .partner-contents ul li {
+    margin-bottom: 20px;
+  }
+
+  .partner-contents {
+    max-width: 423px;
+  }
+
+  .partner-lap-image {
+    max-width: 226px;
+    bottom: -31px;
+    left: 28%;
+  }
+
+  .portfolio-head h2 {
+    font-size: 25px;
+    line-height: 68px;
+  }
+
+  .portfolio-blocks-image img {
+    width: 95px;
+    height: 30px;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 101px;
+  }
+
+  .news-head h2 {
+    font-size: 33px;
+    line-height: 46px;
+    margin-bottom: 23px;
+  }
+
+  .news {
+    padding: 40px 0px 32px;
+  }
+
+  .footer-head h2 {
+    font-size: 29px;
+    line-height: 36px;
+    margin-bottom: 41px;
+  }
+
+  .greever-love {
+    padding-bottom: 17px;
+  }
+
+  .greever-love h2 {
+    font-size: 23px;
+    line-height: 34px;
+  }
+
+  .greever-love p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 18px;
+  }
+
+  .bamba {
+    width: 100%;
+    max-width: 287px;
+    margin: 0 0;
+    margin-left: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  header .navbar-nav li a {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .header-middle-logo {
+    max-width: 166px;
+  }
+
+  ul#menu {
+    max-width: 920px;
+  }
+
+  .banner-content h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .banner-content {
+    max-width: 575px;
+  }
+
+  .main-padding {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .news {
+    padding: 28px 0px 26px;
+  }
+
+  .news-card-content h2 {
+    font-size: 21px;
+    margin-bottom: 9px;
+  }
+
+  .news-card-content p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .footer-head h2 {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 31px;
+  }
+
+  .greever-love h2 {
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  .greever-love p {
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 17px;
+  }
+
+  .greever-love ul li a {
+    font-size: 16px;
+  }
+
+  .greever-love ul li .fa {
+    font-size: 18px;
+    margin-right: 16px;
+    margin-bottom: 11px;
+  }
+
+  .bamba {
+    width: 100%;
+    max-width: 271px;
+    margin: 0 0;
+    margin-left: auto;
+  }
+
+  footer {
+    padding: 25px 0px 11px;
+  }
+
+  .footer-logo {
+    padding-top: 26px;
+    max-width: 181px;
+  }
+
+  .footer-menu {
+    padding-top: 30px;
+  }
+
+  .footer-menu ul {
+    max-width: 336px;
+  }
+
+  .footer-copy-write {
+    padding-top: 29px;
+  }
+}
+
+/* Large devices (laptops/desktops, 991px and up) */
+@media only screen and (max-width: 991px) {
+  header {
+    z-index: 4;
+  }
+
+  .navbar-toggler {
+    background-color: #A0371B;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-toggler-icon {
+    height: 3px;
+    width: 38px;
+    background-image: unset;
+    background-color: rgba(241, 233, 233, 0.733);
+    margin: 5px 0px;
+    border-radius: 5px;
+  }
+
+  ul#menu {
+    max-width: 100%;
+    padding: 61px 0px 60px;
+  }
+
+  .header-logo {
+    display: block;
+  }
+
+  header .navbar-nav li a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .login {
+    max-width: 261px;
+    margin-left: 25px;
+  }
+
+  .banner-content h2 {
+    font-size: 39px;
+    line-height: 47px;
+  }
+
+  .news {
+    padding: 28px 12px 26px;
+  }
+
+  footer {
+    padding: 25px 22px 11px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 884px and up) */
+@media only screen and (max-width: 884px) {
+  .header-logo {
+    max-width: 226px;
+  }
+
+  header {
+    padding: 13px 0px 6px 0px;
+  }
+
+  .partner-contents p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
+
+  .partner-contents ul li {
+    margin-bottom: 17px;
+  }
+
+  .partner-contents ul li {
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 25px;
+  }
+
+  .partner-image img {
+    margin-top: -90px;
+  }
+
+  .partner-lap-image {
+    max-width: 203px;
+    bottom: -26px;
+    left: 27%;
+  }
+
+  .main-padding {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .portfolio-head h2 {
+    font-size: 24px;
+    line-height: 67px;
+  }
+
+  .portfolio {
+    padding-top: 38px;
+    padding-bottom: 7px;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 92px;
+  }
+
+  .portfolio-blocks-image img {
+    width: 92px;
+    height: 28px;
+  }
+
+  .news-head h2 {
+    font-size: 30px;
+    line-height: 43px;
+    margin-bottom: 19px;
+  }
+
+  .news-card-content h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .news-card-content p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .news-card-content {
+    padding: 21px 5px 22px 23px;
+  }
+
+  .footer-head h2 {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 27px;
+  }
+
+  .greever-love h2 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .greever-love p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
+
+  .greever-love ul li a {
+    font-size: 15px;
+  }
+
+  .greever-love ul li .fa {
+    font-size: 17px;
+    margin-right: 14px;
+    margin-bottom: 9px;
+  }
+
+  .bamba {
+    max-width: 253px;
+  }
+
+  .footer-logo {
+    padding-top: 22px;
+    max-width: 162px;
+  }
+
+  .footer-menu ul li a {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .footer-menu {
+    padding-top: 23px;
+  }
+
+  .footer-menu ul {
+    max-width: 310px;
+    margin: 0 0;
+  }
+
+  .footer-copy-write p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .footer-copy-write {
+    padding-top: 25px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 834px and up) */
+@media only screen and (max-width: 834px) {
+  .banner-content h2 {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .banner-content {
+    max-width: 527px;
+  }
+
+  .banner {
+    padding: 180px 0px 237px;
+  }
+
+  .partner-image img {
+    margin-top: -76px;
+  }
+
+  .main-padding {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .partner {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    margin-top: -66px;
+  }
+
+
+  .portfolio-blocks-image {
+    max-width: 173px;
+    margin: 0 0;
+    margin-bottom: 36px;
+    margin-right: auto;
+  }
+
+  .portfolio-blocks {
+    max-width: 790px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .portfolio-blocks-image img {
+    width: 109px;
+    height: 36px;
+  }
+
+  .news-card-content {
+    padding: 18px 3px 16px 17px;
+  }
+
+  .news-card-content h2 {
+    font-size: 19px;
+    margin-bottom: 6px;
+  }
+
+  .news {
+    padding: 28px 12px 26px;
+    background-size: 31%;
+  }
+
+  .footer-logo {
+    padding-top: 22px;
+    max-width: 156px;
+  }
+
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (max-width: 800px) {
+  .header-logo {
+    max-width: 214px;
+  }
+
+  .banner-content h2 {
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  .partner-lap-image {
+    max-width: 192px;
+    bottom: -23px;
+    left: 27%;
+  }
+
+  .main-padding {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .portfolio {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+
+  .news-head h2 {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 17px;
+  }
+
+  .news {
+    padding: 22px 0px 21px;
+    background-size: 31%;
+  }
+
+  .news-card-content p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .footer-head h2 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 26px;
+  }
+
+  .greever-love h2 {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  .greever-love p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 13px;
+  }
+
+  .greever-love ul li a {
+    font-size: 14px;
+  }
+
+  .bamba {
+    max-width: 239px;
+  }
+
+  footer {
+    padding: 22px 14px 9px;
+  }
+
+  .banner-content {
+    max-width: 486px;
+  }
+
+  .gove-card-head {
+    max-width: 378px;
+  }
+
+  .gove-card-educaation {
+    width: 100%;
+    max-width: 301px;
+    border-bottom: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .header-logo {
+    max-width: 205px;
+  }
+
+  .banner-content h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .banner-content {
+    max-width: 457px;
+  }
+
+  .partner-contents p {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 22px;
+  }
+
+  .partner-contents ul li {
+    font-size: 17px;
+    line-height: 25px;
+    margin-left: 23px;
+  }
+
+  .partner-contents ul li {
+    margin-bottom: 15px;
+  }
+
+  .partner-lap-image {
+    max-width: 184px;
+    bottom: -22px;
+    left: 27%;
+  }
+
+  .news-head h2 {
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 12px;
+  }
+
+  .footer-head h2 {
+    font-size: 21px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+
+  footer {
+    padding: 20px 1px 8px;
+  }
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (max-width: 767px) {
+  .partner-image {
+    display: none;
+  }
+
+  .banner-content {
+    max-width: 457px;
+    text-align: center;
+  }
+
+  .banner-content h2 {
+    font-size: 29px;
+    line-height: 36px;
+  }
+
+  .header-logo {
+    max-width: 198px;
+  }
+
+  .partner-contents {
+    max-width: 664px;
+    margin: 0 auto;
+  }
+
+  .partner-lap-image {
+    display: none;
+  }
+
+  .portfolio {
+    padding-top: 16px;
+    padding-bottom: 0px;
+  }
+
+  .experience {
+    padding-top: 27px;
+    padding-bottom: 24px;
+  }
+
+  .experience-card {
+    max-width: 681px;
+    padding: 79px 13px 40px 57px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  .experience-grovelove-card {
+    padding: 94px 12px 40px 50px;
+  }
+
+  .news-card-content {
+    padding: 18px 58px 16px 34px;
+  }
+
+  .news-card {
+    margin-bottom: 20px;
+  }
+
+  .news {
+    padding: 22px 0px 2px;
+    background-size: 11%;
+    background-position: top;
+  }
+
+  .footer-menu {
+    padding-top: 11px;
+  }
+
+  .footer-menu ul {
+    max-width: 351px;
+    margin: 0 0;
+  }
+
+  .footer-copy-write {
+    padding-top: 11px;
+  }
+
+  .footer-copy-write p {
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  .greever-love {
+    text-align: center;
+  }
+
+  .Greer {
+    border-right: none;
+  }
+
+  .bamba {
+    max-width: 100%;
+    margin-top: 18px;
+    border-top: 2px solid #CA9384;
+    padding-top: 13px;
+  }
+
+  .footer-head h2 {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+
+  .greever-love h2 {
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  .greever-love p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 7px;
+  }
+
+  .footer-logo {
+    padding-top: 22px;
+    max-width: 173px;
+    margin: 0 auto;
+  }
+
+  .footer-menu ul {
+    max-width: 351px;
+    margin: 0 auto;
+  }
+
+  .experience-grovelove-card {
+    padding: 94px 11px 40px 34px;
+  }
+
+  .gove-card-head {
+    max-width: 360px;
+  }
+}
+
+/* Medium devices (landscape tablets, 640px and up) */
+@media only screen and (max-width: 640px) {
+  .portfolio-blocks-image img {
+    width: 127px;
+    height: 44px;
+  }
+
+  .experience-card-contents h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .gove-card-head {
+    max-width: 265px;
+  }
+
+  .experience-grovelove-card {
+    padding: 92px 5px 38px 26px;
+  }
+
+  .partner-contents p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  .partner-contents ul li {
+    margin-bottom: 10px;
+  }
+
+  .partner-contents ul li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 23px;
+  }
+
+  .partner {
+    padding-top: 22px;
+    padding-bottom: 23px;
+    margin-top: -103px;
+  }
+
+
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, and large phones 600px and up) */
+@media only screen and (max-width: 600px) {
+  .experience-card-experience p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .gove-card-head {
+    max-width: 236px;
+  }
+
+  .experience-card-experience {
+    padding: 14px 0px;
+
+  }
+
+  .news-card-content {
+    padding: 15px 53px 16px 32px;
+  }
+
+  .gove-card-head {
+    max-width: 100%;
+  }
+
+  .gove-card-educaation {
+    width: 100%;
+    max-width: 457px;
+    border-bottom: none;
+  }
+}
+
+/* Medium devices (landscape tablets, and large phones 576px and up) */
+@media only screen and (max-width: 576px) {
+  .experience-card-contents h2 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .experience-card-contents {
+    max-width: 251px;
+  }
+
+  .gove-card-contents {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+
+  }
+
+  .gove-card-head {
+    max-width: 100%;
+    border-bottom: 1px solid #bfbfc0;
+  }
+
+  .fact {
+    max-width: 100%;
+  }
+
+  .gove-card-educaation {
+    max-width: 493px;
+    border-bottom: none;
+  }
+
+  .experience-grovelove-card {
+    padding: 92px 5px 3px 26px;
+  }
+
+  .news-card-content {
+    padding: 15px 28px 16px 25px;
+  }
+}
+
+/* Medium devices (landscape tablets, and large phones 575px and up) */
+@media only screen and (max-width: 575px) {
+  .experience-grovelove-card {
+    padding: 92px 32px 3px 23px;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 148px;
+    margin: 0 0;
+    margin-bottom: 33px;
+    margin-right: auto;
+  }
+
+  .portfolio-blocks-image img {
+    width: 91px;
+    height: 41px;
+  }
+
+  .bamba {
+    padding: 17px 0px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 540px and up) */
+@media only screen and (max-width: 540px) {
+  .banner-content {
+    max-width: 406px;
+  }
+
+  .experience-card-contents h2 {
+    font-size: 34px;
+    line-height: 39px;
+  }
+
+  .experience-card-contents p {
+    font-size: 19px;
+    line-height: 36px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 480px and up) */
+@media only screen and (max-width: 480px) {
+  .experience-card-contents {
+    max-width: 175px;
+  }
+
+  .experience-card-contents h2 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .experience-card-image {
+    max-width: 184px;
+    top: -43px;
+  }
+
+  .gove-card {
+    width: 100%;
+    max-width: 435px;
+    margin-left: unset;
+  }
+
+  .experience-grove-card-card-image {
+    max-width: 190px;
+    top: -28px;
+  }
+
+  .experience-card-contents p {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .news {
+    padding: 22px 25px 2px;
+    background-size: 11%;
+    background-position: top;
+  }
+
+  .news-card {
+    max-width: 100%;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 425px and up) */
+@media only screen and (max-width: 428px) {
+  .banner-content h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .banner-content {
+    max-width: 392px;
+  }
+
+  .portfolio-blocks-image img {
+    width: 88px;
+    height: 35px;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 188px;
+    margin: 0 0;
+    margin-bottom: 22px;
+    margin-right: auto;
+  }
+
+  .portfolio {
+    padding-top: 7px;
+    padding-bottom: 0px;
+  }
+
+  .news-head h2 {
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 24px;
+  }
+
+  .experience-card-image {
+    max-width: 169px;
+    top: -23px;
+  }
+
+  .experience-card-contents h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .experience-card-contents p {
+    font-size: 17px;
+    line-height: 33px;
+  }
+
+  .experience-card-experience h2 {
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+
+  .experience-card-education h2 {
+    font-size: 23px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .experience-card-experience h2 {
+    line-height: 36px;
+    margin-bottom: 15px;
+    font-size: 23px;
+  }
+
+  .experience-card {
+    max-width: 681px;
+    padding: 81px 13px 22px 47px;
+    margin-bottom: 58px;
+  }
+
+  .experience-grove-card-card-image {
+    max-width: 164px;
+    top: -26px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 393px and up) */
+@media only screen and (max-width: 393px) {
+  .partner-contents {
+    max-width: 100%;
+  }
+
+  .partner-contents p {
+    font-size: 15px;
+    line-height: 19px;
+    margin-bottom: 14px;
+  }
+
+  .partner-contents ul li {
+    font-size: 15px;
+    line-height: 22px;
+    margin-left: 22px;
+  }
+
+  .partner-contents ul li::before {
+    left: -20px;
+    top: 1px;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 170px;
+    margin: 0 0;
+    margin-bottom: 19px;
+    margin-right: auto;
+  }
+
+  .portfolio-blocks-image img {
+    width: 79px;
+    height: 32px;
+  }
+
+  .experience-card {
+    max-width: 681px;
+    padding: 58px 12px 17px 41px;
+    margin-bottom: 40px;
+  }
+
+  .experience-card-contents h2 {
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  .experience-card-contents {
+    max-width: 152px;
+  }
+
+  .experience-card-image {
+    max-width: 150px;
+    top: -20px;
+  }
+
+  .experience-grove-card-card-image {
+    max-width: 148px;
+    top: -21px;
+  }
+
+  .experience-card-contents p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .experience-grovelove-card {
+    padding: 65px 12px 2px 17px;
+  }
+
+  .news {
+    padding: 22px 8px 0px;
+  }
+
+  .footer-menu ul {
+    max-width: 333px;
+    margin: 0 auto;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 375px and up) */
+@media only screen and (max-width: 375px) {
+  .banner-content {
+    max-width: 342px;
+  }
+
+  .portfolio-blocks-image {
+    max-width: 150px;
+    margin: 0 0;
+    margin-bottom: 19px;
+    margin-right: auto;
+  }
+
+  .experience-grovelove-card {
+    padding: 65px 12px 0px 17px;
+  }
+
+  .footer-menu ul {
+    max-width: 330px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 360px and up) */
+@media only screen and (max-width: 360px) {
+  .navbar-toggler-icon {
+    height: 2px;
+    width: 34px;
+    margin: 5px 0px;
+    border-radius: 6px;
+  }
+
+  header {
+    padding: 9px 0px 6px 0px;
+  }
+
+  .experience-card-contents h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .experience-card-contents {
+    max-width: 144px;
+  }
+
+  .experience-card-image {
+    max-width: 138px;
+    top: -21px;
+  }
+
+  .experience-card-experience h2 {
+    line-height: 26px;
+    margin-bottom: 13px;
+    font-size: 21px;
+  }
+
+  .experience-card-education h2 {
+    font-size: 21px;
+    line-height: 34px;
+    margin-bottom: 16px;
+  }
+
+  .experience-grove-card-card-image {
+    max-width: 140px;
+    top: -23px;
+  }
+
+  .experience-card-education li .fa {
+    margin-right: 13px;
+    font-size: 23px;
+  }
+
+  .news {
+    padding: 22px 0px 0px;
+  }
+
+  .footer-menu ul {
+    text-align: center;
+    max-width: 100%;
+    display: block;
+
+  }
+}
+
+/*  extra small Mobile devices( extra small Mobile devices, 320px and up) */
+@media only screen and (max-width: 320px) {
+  .portfolio-blocks-image {
+    max-width: 134px;
+    margin-bottom: 14px;
+  }
+
+  .experience-card-image {
+    max-width: 121px;
+    top: -11px;
+  }
+
+  .experience-card {
+    max-width: 681px;
+    padding: 43px 9px 15px 14px;
+    margin-bottom: 29px;
+  }
+
+  .experience-card-experience h2 {
+    line-height: 25px;
+    margin-bottom: 11px;
+    font-size: 20px;
+  }
+
+  .experience-card-education h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+
+  .experience-grove-card-card-image {
+    max-width: 119px;
+    top: -14px;
+  }
+
+  .experience-grovelove-card {
+    padding: 50px 9px 0px 14px;
+  }
+
+  .news-head h2 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 22px;
+  }
+}
